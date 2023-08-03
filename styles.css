@@ -34,13 +34,6 @@ img{
     list-style: none;
 }
 
-.container-header {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 204px;
-    padding-right: 204px;
-}
 
 .container-main {
     width: 1200px;
@@ -62,52 +55,64 @@ img{
 /* header */
 
 .header {
-    height: 150px;
-    background-color: rgba(43, 74, 97, 0.916);
-    margin: -8px;
+    margin-left: auto;
+    margin-right: auto;
+    margin:-8px;
+    position: absolute;
+    border-bottom: 3px solid #FFF;
+background: rgba(43, 74, 97, 0.87);
+width: 1444px;
+}
+
+.container-header {
+    display: flex;
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 204px;
+    padding-right: 0px;
 }
 
 .logo {
-    position: absolute;
-    position: relative;
+    margin-right: 160px;
+    padding-top: 39px;
+    display: block;
     top: 39px;
 }
 
-
 .menu {
+    margin-right: 212px;
+    padding-top: 63px;
     display: flex;
     gap: 38px;
-    position: absolute;
-    position: relative;
     left: 558px;
-    padding-bottom: 38px;
 }
 
-.menu-item {}
-
-.link {
+.nav-menu {
     color: #FFF;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
 }
 
-.nav-menu {}
-
-.current > .link {
+.current {
     color: #94CFFF;
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
+text-align: center;
+font-family: 'Inter', sans-serif;
+font-size: 20px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
 }
 
 .header-btn {
+    margin-top: 54px;
+    padding-top: 60px;
+    margin-bottom: 40px;
+    padding-top: 40px;
     color: #26C6EA;
     font-family: 'HeadlandOne', sans-serif;
     font-size: 20px;
@@ -122,10 +127,12 @@ img{
 }
 
 .list-item {
+    top: 70px;
+    right: 48px;
+    position: absolute;
     display: flex;
     gap: 10px;
 }
-
 .lang-item {
     color: #FFF;
     text-align: center;
@@ -135,6 +142,7 @@ img{
     font-weight: 400;
     line-height: normal;
     cursor: default;
+    display: flex;
 }
 
 .swich {
